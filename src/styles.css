@@ -1,0 +1,195 @@
+/* Estilos gerais */
+body {
+    background: linear-gradient(to bottom right, red, black);
+    background-image: url('imagens/funososo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*overflow: hidden; Evitar rolagem na página */
+}
+
+/* Fundo gradiente de vermelho para preto (da esquerda superior para a direita inferior) */
+.gradient-background {
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.167), black);
+    /*background-image: url('imagens/batatafrita.png');*/
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Container principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px; /* Diminuir o espaçamento interno */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(178, 49, 169, 0.666);
+    padding: 10px 0;
+    margin-bottom: 10px; /* Reduzir o espaço entre os ícones e o próximo conteúdo */
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 20px;
+    border-radius: 8px;
+    padding: 1px ;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover nos ícones das redes sociais */
+.social-icons a:hover {
+    color: orange; /* Muda a cor para laranja quando o mouse passa sobre os ícones */
+}
+
+/* Titulo do Cardápio */
+.titulo-Cardapio{
+    display: flex;
+    align-items: center;
+   text-align: center;
+    background-color: rgba(247, 110, 169, 0.71); /* Transparência */
+    border-radius: 8px;
+    padding: 1px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+}
+
+.loja-container{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 2px;
+    /*display: flex; flex-direction: column;*/
+    align-items: left;
+    background-color: rgba(247, 110, 169, 0.455); /* Transparência */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+}
+/* Cardápio */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 40px;
+    /*display: flex; flex-direction: column;*/
+    align-items: left;
+    background-color: rgba(247, 110, 169, 0.455); /* Transparência */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+}
+
+/* Item de cardápio */
+.menu-item {
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0; /* Diminuir o espaçamento entre os itens */
+    width: 10%;
+}
+.menu-produto{
+    justify-content: space-between;
+    align-items: right;
+    margin: 5px 0; /* Diminuir o espaçamento entre os itens */
+    width: 100%;
+}
+
+.item-info {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info input {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.menu-item-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Botão */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Diminuir espaço entre o botão e os itens */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Resumo do pedido */
+.order-summary {
+    background-color: rgba(234, 241, 230, 0.8); /* Transparência */
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid #c1d7c4;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 10px; /* Diminuir o espaço entre o resumo e o footer */
+    margin-left: auto;
+    margin-right: auto; /* Garantir que fique centralizado */
+}
+
+/* Alinha o resumo do pedido com o tamanho da div do cardápio */
+#resumoPedido {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: rgb(69, 53, 53);
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Ajuste o espaçamento entre o conteúdo e o footer */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
